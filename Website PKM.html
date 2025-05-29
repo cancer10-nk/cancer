@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoShare - Peduli Lingkungan Bersama</title>
+    <link href="PKMcss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌱 EcoShare</h1>
+            <p class="subtitle">Berbagi untuk Bumi yang Lebih Hijau</p>
+            <div class="nav-tabs">
+                <button class="tab-btn active" onclick="showTab('info')">Info Lingkungan</button>
+                <button class="tab-btn" onclick="showTab('quiz')">Kuis Eco</button>
+                <button class="tab-btn" onclick="showTab('form')">Peminjaman Alat</button>
+            </div>
+        </header>
+
+        <!-- Info Lingkungan Section -->
+        <div id="info" class="content-section active">
+            <h2>🌍 Mengapa Peduli Lingkungan Penting?</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">8 Juta</div>
+                    <div>Ton plastik masuk ke laut setiap tahun</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">500</div>
+                    <div>Tahun waktu degradasi plastik</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">70%</div>
+                    <div>Sampah dari kemasan makanan</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1.3 M</div>
+                    <div>Ton sampah makanan per hari</div>
+                </div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🌊 Dampak Sampah Plastik</h3>
+                    <p>Setiap tahun, jutaan ton sampah plastik berakhir di lautan, merusak ekosistem laut dan mengancam kehidupan biota laut. Mikroplastik bahkan telah ditemukan dalam rantai makanan manusia.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>♻️ Solusi Berkelanjutan</h3>
+                    <p>Menggunakan alat makan yang dapat digunakan kembali adalah langkah sederhana namun efektif untuk mengurangi sampah plastik sekali pakai. Setiap penggunaan ulang berarti satu kemasan plastik terhindar dari TPA.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🤝 Berbagi adalah Peduli</h3>
+                    <p>Sistem peminjaman alat makan memungkinkan kita berbagi sumber daya, mengurangi konsumsi berlebihan, dan membangun komunitas yang peduli lingkungan.</p>
+                </div>
+                
+                <div class="info-card">
+                    <h3>🌱 Aksi Nyata</h3>
+                    <p>Mulai dari hal kecil seperti membawa tumbler sendiri, menggunakan sedotan stainless, hingga berpartisipasi dalam program peminjaman alat makan berkelanjutan.</p>
+                </div>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #e8f5e8, #d4edda); padding: 30px; border-radius: 15px; margin-top: 30px;">
+                <h3 style="color: #155724; margin-bottom: 15px;">💡 Tips Ramah Lingkungan</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin: 10px 0; padding: 10px; background: white; border-radius: 8px;">🥤 Bawa botol minum sendiri dan hindari botol plastik sekali pakai</li>
+                    <li style="margin: 10px 0; padding: 10px; background: white; border-radius: 8px;">🍽️ Gunakan alat makan yang dapat dicuci ulang saat makan di luar</li>
+                    <li style="margin: 10px 0; padding: 10px; background: white; border-radius: 8px;">🛍️ Bawa tas belanja sendiri untuk mengurangi kantong plastik</li>
+                    <li style="margin: 10px 0; padding: 10px; background: white; border-radius: 8px;">🌱 Pilih produk dengan kemasan minimal atau ramah lingkungan</li>
+                    <li style="margin: 10px 0; padding: 10px; background: white; border-radius: 8px;">♻️ Pisahkan sampah organik dan anorganik dengan benar</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz" class="content-section">
+            <h2>🧠 Kuis Pengetahuan Lingkungan</h2>
+            <p style="margin-bottom: 30px;">Uji pengetahuan Anda tentang lingkungan dan dapatkan skor untuk mengetahui seberapa eco-friendly Anda!</p>
+            
+            <div class="quiz-container">
+                <div class="quiz-question">
+                    <h4>1. Berapa lama waktu yang diperlukan untuk menguraikan kantong plastik?</h4>
+                    <div class="quiz-options">
+                        <div class="quiz-option">
+                            <input type="radio" name="q1" value="10" id="q1a">
+                            <label for="q1a">10-20 tahun</label>
+                        </div>
+                        <div class="quiz-option">
+                            <input type="radio" name="q1" value="20" id="q1b">
+                            <label for="q1b">100-200 tahun</label>
+                        </div>
+                        <div class="quiz-option">
+                            <input type="radio" name="q1" value="30" id="q1c">
+                            <label for="q1c">500-1000 tahun</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <h4>2. Apa yang paling efektif untuk mengurangi sampah plastik?</h4>
+                    <div class="quiz-options">
+                        <div class="quiz-option">
+                            <input type="radio" name="q2" value="30" id="q2a">
+                            <label for="q2a">Menggunakan produk yang dapat digunakan kembali</label>
+                        </div>
+                        <div class="quiz-option">
+                            <input type="radio" name="q2" value="10" id="q2b">
+                            <label for="q2b">Membakar sampah plastik</label>
+                        </div>
+                        <div class="quiz-option">
+                            <input type="radio" name="q2" value="20" id="q2c">
+                            <label for="q2c">Hanya mendaur ulang</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <h4>3. Berapa persen sampah laut yang terdiri dari plastik?</h4>
+                    <div class="quiz-options">
+                        <div class="quiz-option">
+                            <input type="radio" name="q3" value="10" id="q3a">
+                            <label for="q3a">30%</label>
+                        </div>
+                        <div class="quiz-option">
+                            <input type="radio" name="q3" value="20" id="q3b">
+                            <label for="q3b">60%</label>
+                        </div>
+                        <div class="quiz-option">
+                            <input type="radio" name="q3" value="30" id="q3c">
+                            <label for="q3c">80%</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <h4>4. Manakah pilihan yang paling ramah lingkungan?</h4>
+                    <div class="quiz-options">
+                        <div class="quiz-option">
+                            <input type="radio" name="q4" value="10" id="q4a">
+                            <label for="q4a">Styrofoam untuk takeaway</label>
+                        </div>
+                        <div class="quiz-option">
+                            <input type="radio" name="q4" value="30" id="q4b">
+                            <label for="q4b">Tempat makan stainless steel</label>
+                        </div>
+                        <div class="quiz-option">
+                            <input type="radio" name="q4" value="20" id="q4c">
+                            <label for="q4c">Kemasan kertas sekali pakai</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-question">
+                    <h4>5. Apa dampak positif dari berbagi alat makan?</h4>
+                    <div class="quiz-options">
+                        <div class="quiz-option">
+                            <input type="radio" name="q5" value="10" id="q5a">
+                            <label for="q5a">Hanya menghemat uang</label>
+                        </div>
+                        <div class="quiz-option">
+                            <input type="radio" name="q5" value="30" id="q5b">
+                            <label for="q5b">Mengurangi sampah dan membangun komunitas</label>
+                        </div>
+                        <div class="quiz-option">
+                            <input type="radio" name="q5" value="20" id="q5c">
+                            <label for="q5c">Tidak ada dampak khusus</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="submit-btn" onclick="calculateQuizScore()">Lihat Hasil Kuis</button>
+                
+                <div id="quiz-result" style="margin-top: 20px; padding: 20px; border-radius: 10px; display: none;">
+                    <h3>Hasil Kuis Anda:</h3>
+                    <div id="score-display"></div>
+                    <div id="score-message"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div id="form" class="content-section">
+            <h2>🍽️ Formulir Peminjaman Alat Makan Eco-Friendly</h2>
+            <p style="margin-bottom: 30px;">Bergabunglah dalam gerakan ramah lingkungan dengan meminjam alat makan yang dapat digunakan kembali!</p>
+            
+            <form id="loanForm">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="whatsapp">Nomor WhatsApp</label>
+                    <input type="tel" id="whatsapp" name="whatsapp">
+                </div>
+
+                <div class="form-group">
+                    <label for="institusi">Program Studi atau Kelas</label>
+                    <input type="text" id="institusi" name="institusi" placeholder="(Contoh TPPL 1A)">
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat">Alamat Pengambilan</label>
+                    <textarea id="alamat" name="alamat" required placeholder="Alamat lengkap untuk pengambilan dan pengembalian alat"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Alat Makan yang Dibutuhkan</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="piring" name="alat[]" value="Piring Stainless">
+                            <label for="piring">Piring Stainless Steel</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sendok" name="alat[]" value="Sendok Stainless">
+                            <label for="sendok">Sendok Stainless Steel</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="garpu" name="alat[]" value="Garpu Stainless">
+                            <label for="garpu">Garpu Stainless Steel</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="gelas" name="alat[]" value="Gelas Kaca">
+                            <label for="gelas">Gelas Kaca</label>
+                        </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="jumlah_orang">Jumlah Orang</label>
+                    <input type="number" id="jumlah" name="jumlah">
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggal_pinjam">Tanggal Peminjaman</label>
+                    <input type="date" id="tanggal_pinjam" name="tanggal_pinjam" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggal_kembali">Tanggal Pengembalian</label>
+                    <input type="date" id="tanggal_kembali" name="tanggal_kembali" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pengalaman_eco">Pengalaman dengan Produk Ramah Lingkungan</label>
+                    <select id="pengalaman_eco" name="pengalaman_eco">
+                        <option value="">Pilih pengalaman Anda</option>
+                        <option value="Pemula">Baru memulai</option>
+                        <option value="Kadang-kadang">Kadang-kadang menggunakan</option>
+                        <option value="Sering">Sering menggunakan</option>
+                        <option value="Selalu">Selalu menggunakan produk ramah lingkungan</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="motivasi">Apa yang memotivasi Anda untuk menggunakan alat makan ramah lingkungan?</label>
+                    <textarea id="motivasi" name="motivasi" placeholder="Ceritakan motivasi Anda dalam mendukung gerakan ramah lingkungan"></textarea>
+                </div>
+
+                <div class="form-group" style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #27ae60;">
+                    <h4 style="color: #27ae60; margin-bottom: 15px;">📋 Syarat dan Ketentuan</h4>
+                    <ul style="margin-left: 20px; line-height: 1.8;">
+                        <li>Alat makan harus dikembalikan dalam kondisi bersih</li>
+                        <li>Kerusakan atau kehilangan menjadi tanggung jawab peminjam</li>
+                        <li>Konfirmasi peminjaman akan diberikan melalui WhatsApp</li>
+                        <li>Pengambilan dan pengembalian sesuai jadwal yang disepakati</li>
+                        <li>Deposit keamanan mungkin diperlukan untuk peminjaman dalam jumlah besar</li>
+                    </ul>
+                    <div style="margin-top: 15px;">
+                        <input type="checkbox" id="setuju" name="setuju" required style="width: auto; margin-right: 10px;">
+                        <label for="setuju">Saya setuju dengan syarat dan ketentuan yang berlaku</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Ajukan Peminjaman</button>
+            </form>
+
+            <div id="success-message" class="success-message">
+                <h3>✅ Formulir Berhasil Dikirim!</h3>
+                <p>Terima kasih telah bergabung dalam gerakan ramah lingkungan. Tim kami akan menghubungi Anda melalui WhatsApp untuk konfirmasi dalam 1x24 jam.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all content sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show selected section and activate button
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function calculateQuizScore() {
+            let score = 0;
+            const questions = ['q1', 'q2', 'q3', 'q4', 'q5'];
+            
+            questions.forEach(question => {
+                const selectedOption = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedOption) {
+                    score += parseInt(selectedOption.value);
+                }
+            });
+            
+            const resultDiv = document.getElementById('quiz-result');
+            const scoreDisplay = document.getElementById('score-display');
+            const scoreMessage = document.getElementById('score-message');
+            
+            resultDiv.style.display = 'block';
+            scoreDisplay.innerHTML = `<div style="font-size: 2em; font-weight: bold; color: #27ae60;">${score}/150</div>`;
+            
+            let message = '';
+            let bgColor = '';
+            
+            if (score >= 120) {
+                message = '🌟 Luar Biasa! Anda adalah Eco Warrior sejati! Pengetahuan Anda tentang lingkungan sangat baik.';
+                bgColor = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+            } else if (score >= 90) {
+                message = '🌱 Bagus! Anda peduli lingkungan dan memiliki pengetahuan yang cukup baik. Terus tingkatkan!';
+                bgColor = 'linear-gradient(135deg, #f39c12, #e67e22)';
+            } else if (score >= 60) {
+                message = '🌿 Cukup baik! Masih ada ruang untuk belajar lebih banyak tentang lingkungan.';
+                bgColor = 'linear-gradient(135deg, #3498db, #2980b9)';
+            } else {
+                message = '🌍 Mari belajar lebih banyak! Pengetahuan tentang lingkungan sangat penting untuk masa depan.';
+                bgColor = 'linear-gradient(135deg, #e74c3c, #c0392b)';
+            }
+            
+            resultDiv.style.background = bgColor;
+            resultDiv.style.color = 'white';
+            scoreMessage.innerHTML = `<p style="margin-top: 15px; font-size: 1.1em;">${message}</p>`;
+        }
+
+        // Form submission handler
+        document.getElementById('loanForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const selectedTools = [];
+            const checkboxes = document.querySelectorAll('input[name="alat[]"]:checked');
+            checkboxes.forEach(checkbox => {
+                selectedTools.push(checkbox.value);
+            });
+            
+            // Validation
+            if (selectedTools.length === 0) {
+                alert('Silakan pilih minimal satu jenis alat makan!');
+                return;
+            }
+            
+            if (!document.getElementById('setuju').checked) {
+                alert('Anda harus menyetujui syarat dan ketentuan!');
+                return;
+            }
+            
+            // Simulate form submission
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Mengirim...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                // Show success message
+                document.getElementById('success-message').style.display = 'block';
+                
+                // Reset form
+                this.reset();
+                
+                // Reset button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+                
+                // Scroll to success message
+                document.getElementById('success-message').scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+            }, 2000);
+        });
+
+        // Set minimum date to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('tanggal_pinjam').min = today;
+        document.getElementById('tanggal_kembali').min = today;
+
+        // Update return date minimum when borrow date changes
+        document.getElementById('tanggal_pinjam').addEventListener('change', function() {
+            const borrowDate = this.value;
+            document.getElementById('tanggal_kembali').min = borrowDate;
+        });
+    </script>
+</body>
+</html>
